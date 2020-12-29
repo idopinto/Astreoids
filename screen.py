@@ -1,6 +1,7 @@
 import sys
 import tkinter
 import tkinter.messagebox
+from idlelib.tree import ScrolledCanvas
 
 from turtle import *
 
@@ -472,3 +473,7 @@ class Screen:
         """
         self._root.destroy()
         self._root.quit()
+
+    @property
+    def endGame(self):
+        return self._endGame
